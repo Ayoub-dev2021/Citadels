@@ -220,6 +220,21 @@ html, body {
     .card {
         margin: 0 0 20px 0;
     }
+
+    .contact-image-wrapper {
+        margin-top: 40px;
+    }
+
+    .contact-section .content-wrapper {
+        padding: 30px;
+    }
+
+    .contact-section .btn-primary {
+        width: 80%; /* Increased width */
+        display: block; /* Makes button full width of its container */
+        margin: 20px auto; /* Centers the button and adds vertical spacing */
+        padding: 15px 0; /* Increased padding for better touch target */
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -227,6 +242,10 @@ html, body {
     .container {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .contact-section .btn-primary {
+        width: 100%; /* Full width on very small screens */
     }
 }
 
@@ -283,16 +302,6 @@ html, body {
     background-color: #375b78 !important; /* Lighter shade for hover */
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     transform: translateY(-1px);
-}
-
-@media (max-width: 991.98px) {
-    .contact-image-wrapper {
-        margin-top: 40px;
-    }
-
-    .contact-section .content-wrapper {
-        padding: 30px;
-    }
 }
 
 /* Values section background */
