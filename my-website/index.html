@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Citadels</title>
+    <title>CITADELs</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
 </head>
 <body>
     <header>
@@ -72,6 +80,70 @@
                 </div>
             </div>
         </section>
+<section class="expertise-section py-5">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-lg-8">
+                        <h2 class="display-4 mb-3 animate">Our Expertise Areas</h2>
+                        <p class="lead mb-5 animate">We specialize in key areas that drive business transformation and sustainable growth for our clients.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-4 animate">
+                        <div class="expertise-card text-center p-4">
+                            <div class="card-icon mb-3">
+                                <i class="fas fa-chart-line fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Integrity</h3>
+                            <p class="mb-0">We uphold the highest standards of honesty and transparency in everything we do. Integrity is the foundation of our relationships with clients, partners, and employees. We believe in doing the right thing, even when no one is watching, and consistently deliver on our promises with a commitment to ethical practices.</p>
+                             <!-- <p class="mb-0 full-version">We uphold the highest standards of honesty and transparency in everything we do. Integrity is the foundation of our relationships with clients, partners, and employees. We believe in doing the right thing, even when no one is watching, and consistently deliver on our promises with a commitment to ethical practices.</p> -->
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4 animate">
+                        <div class="expertise-card text-center p-4">
+                            <div class="card-icon mb-3">
+                                <i class="fas fa-digital-tachograph fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Excellence</h3>
+                            <p class="mb-0">We strive for excellence in every aspect of our business, from the quality of our products to the service we provide. Our team is dedicated to continuous improvement, consistently pushing the boundaries of what’s possible to achieve outstanding results. We believe in exceeding expectations and setting new standards of performance.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4 animate">
+                        <div class="expertise-card text-center p-4">
+                            <div class="card-icon mb-3">
+                                <i class="fas fa-users-cog fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Collaboration</h3>
+                            <p class="mb-0">At the heart of our success is teamwork. We value the diverse perspectives and strengths of our team members and foster an environment of mutual respect and open communication. By working together, we achieve more, tackle challenges effectively, and create innovative solutions that drive progress.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4 animate">
+                        <div class="expertise-card text-center p-4">
+                            <div class="card-icon mb-3">
+                                <i class="fas fa-lightbulb fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Innovation</h3>
+                            <p class="mb-0">We are committed to driving innovation and embracing change. Our focus is on staying ahead of industry trends and exploring new ideas that create value for our customers. Through creativity, forward-thinking, and a willingness to experiment, we continue to redefine what’s possible in our field.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mid-hero-section">
+            <div class="overlay-gradient"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2 class="display-3 mb-4">
+                            <span class="text-reveal" data-text="Transform Your Vision Into Reality">Transform Your Vision Into Reality</span>
+                        </h2>
+                        <p class="h4 mb-0 fw-light">
+                            <span class="text-reveal" data-text="Leverage our expertise to drive innovation and sustainable growth.">Leverage our expertise to drive innovation and sustainable growth.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section id="values" class="values-section py-5">
             <div class="container">
@@ -124,7 +196,7 @@
                 <div class="content-wrapper">
                     <div class="form-side">
                         <h2 class="mb-5">Contact Us</h2>
-                        <form>
+                        <form id="contactForm" onsubmit="return sendEmail(event)">
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="name">FULL NAME</label>
@@ -166,7 +238,7 @@
                         <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     </div>
-                    <p class="mb-0">&copy; 2023 Citadels. All rights reserved.</p>
+                    <p class="mb-0">&copy; 2023 CITADELs. All rights reserved.</p>
                 </div>
             </div>
         </div>
